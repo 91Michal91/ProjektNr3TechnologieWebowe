@@ -1,5 +1,5 @@
 import { router } from '../app';
-import { TodoList, TodoStorageProvider } from '../components/TodoList';
+import { TodoList, TodoStorageProvider } from '../components/TaskManager';
 import { TodoBoostrapTheme } from '../components/TodoListThemes';
 
 import { IPage } from './IPage';

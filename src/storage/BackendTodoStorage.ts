@@ -1,5 +1,5 @@
 import { backend } from "../app";
-import { TodoItem, TodoStorageProvider } from "../components/TodoList";
+import { TodoItem, TodoStorageProvider } from "../components/TaskManager";
 
 export class BackendTodoStorage implements TodoStorageProvider {
     onItemsLoad() {

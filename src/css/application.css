@@ -1,0 +1,46 @@
+/* reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* app styles */
+#app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0d0d;
+  padding: 1rem;
+}
+
+#my-list {
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  max-height: 800px;
+}
+
+/* Custom overrides */
+.todo-item:nth-child(odd) {
+  background-color: rgba(255, 255, 255, 0.025);
+}
+
+textarea {
+  min-height: 100px;
+}
+
+.btn-success {
+  background-color: #00c853;
+  border-color: #00c853;
+}
+
+.btn-success:hover {
+  background-color: #00e676;
+  border-color: #00e676;
+}

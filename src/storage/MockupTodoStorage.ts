@@ -1,4 +1,4 @@
-import { TodoItem, TodoStorageProvider } from "../components/TodoList";
+import { TodoItem, TodoStorageProvider } from "../components/TaskManager";
 
 export class MockupTodoStorage implements TodoStorageProvider {
     onItemsLoad() {
