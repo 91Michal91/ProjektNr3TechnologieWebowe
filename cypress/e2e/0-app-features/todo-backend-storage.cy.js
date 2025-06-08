@@ -117,3 +117,20 @@ function clearTodos() {
       });
   });
 });
+
+
+it('should allow marking last task as complete', () => {
+  cy.visit('/')
+  cy.get('.new-todo').type('Zadanie ostatnie{enter}')
+  cy.get('li').last().find('.toggle').click()
+  cy.get('li').last().should('have.class', 'completed')
+})
+
+it('should allow editing and then deleting task', () => {
+  cy.visit('/')
+  cy.get('.new-todo').type('Zadanie do edycji backend{enter}')
+  cy.get('li').last().dblclick()
+  cy.get('li.editing .edit').clear().type('Zmienione backend{enter}')
+  cy.get('li').last().find('.destroy').click({ force: true })
+  cy.get('li').should('not.contain', 'Zmienione backend')
+})
